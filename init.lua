@@ -188,7 +188,7 @@ minetest.register_node("3d_torch:torch_floor",{
 
 --abm that converts the already placed torches to the 3d ones
 minetest.register_abm({
-	nodenames = {"default:torch"},
+	nodenames = {"default:torch", "torches:floor", "torches:wall" },
 	interval = 1,
 	chance = 1,
 	action = function(pos, node)
