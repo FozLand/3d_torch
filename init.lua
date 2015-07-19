@@ -199,7 +199,7 @@ minetest.register_abm({
 			[5]=3
 			
 		}
-		print(node.param2)
+		--print(node.param2)
 		if node.param2 == 1 then
 		minetest.swap_node(pos, {name="3d_torch:torch_floor"})
 		elseif node.param2 == 0 then
